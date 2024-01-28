@@ -7,57 +7,59 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="page-header">
-    <nav class="navigation">
-      <a class="navigation-logo" href="#">
-        <img class="logo-img" src="img/logo/logo.svg" alt="Логотип города Седоны" width="139" height="70">
-      </a>
-      <ul class="navigation-list">
-        <li class="navigation-item navigation-link-active">
-          <a class="navigation-link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">О Седоне</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Гостиницы</a>
-        </li>
-      </ul>
+  <header class="page-header header-container">
+      <nav class="navigation">
+        <a class="navigation-logo" href="#">
+          <img class="logo-img" src="img/logo/logo.svg" alt="Логотип города Седоны" width="139" height="70">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item navigation-link-active">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Гостиницы</a>
+          </li>
+        </ul>
 
-      <ul class="navigation-list site-menu">
-        <li class="navigation-item">
-          <a class="icon-button" href="#">
-            <span class="visually-hidden">Поиск</span>
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a class="icon-button" href="#">
-            <span class="visually-hidden">Избранное</span>
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a class="button button-secondary" href="#">Хочу сюда!</a>
-        </li>
-      </ul>
-    </nav>
+        <ul class="navigation-list site-menu">
+          <li class="navigation-item">
+            <a class="icon-button" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="icon-button" href="#">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="button button-secondary button-header" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
   </header>
 
-  <main class="page-main">
-    <div class="background-index">
-      <div class="background-welcome">
-        <h1 class="visually-hidden">Турестический город Седона</h1>
+  <main class="page-main main-container">
+    <div class="main-promo">
+      <h1 class="visually-hidden">Турестический город Седона</h1>
       <img class="main-logo-bg" src="" alt="Логотип Седоны">
-      </div>
     </div>
 
     <section class="advantages">
-      <h2 class="visually-hidden">Преимущества города Седоны</h2>
-      <p class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p class="advantages-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <div class="advantages-content">
+        <h2 class="visually-hidden">Преимущества города Седоны</h2>
+        <p class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="advantages-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
       <ol class="advantages-list">
         <li class="advantages-item advantages-item-large">
-          <h3 class="advantages-subtitle">Настоящий городок</h3>
-          <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <div class="advantages-block">
+            <h3 class="advantages-subtitle">Настоящий городок</h3>
+            <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
           <img class="advantages-image" src="img/content/photo-1.jpg" alt="Фото города Седоны" width="800" height="384">
           <ul class="advantages-list advantages-list-inner">
             <li class="advantages-item">
@@ -75,8 +77,10 @@
           </ul>
         </li>
         <li class="advantages-item advantages-item-large">
+         <div class="advantages-block">
           <h3 class="advantages-subtitle">Там есть мост дьявола</h3>
           <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+         </div>
           <img class="advantages-image" src="img/content/photo-2.jpg" alt="Фото моста дьявола" width="800" height="384">
         </li>
         <li class="advantages-item">
@@ -114,7 +118,7 @@
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer footer-container">
     <section class="footer-social">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social-list">
