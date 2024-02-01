@@ -88,6 +88,19 @@ body {
   padding-left: 20px;
 }
 
+.button-card {
+  padding: 9px 20px 9px 20px;
+  border-radius: 4px;
+}
+
+.pagination-button {
+  min-width: 620px;
+  border: none;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-radius: 4px;
+}
+
 .main-container {
   width: 1280px;
   padding-left: 40px;
@@ -322,8 +335,13 @@ li.advantages-item:nth-child(5) {
 }
 
 .subscribe-inner {
+  padding: 73px 200px 141px 200px;
   color: #000000;
   text-align: center;
+}
+
+.subscribe-inner h2 {
+  margin-bottom: 46px;
 }
 
 .subscribe-inner p {
@@ -385,6 +403,7 @@ li.advantages-item:nth-child(5) {
 }
 
 .background-page-main {
+  padding: 35px 72px 80px 72px;
   color: #ffffff;
   background-color: #83b3d3;
   background-image: url("../img/background/background-filter.jpg");
@@ -401,11 +420,45 @@ li.advantages-item:nth-child(5) {
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
   font-size: 16px;
   line-height: 20px;
+}
+
+.breadcrumbs-link {
+  margin-right: 26px;
+  color: inherit;
+}
+
+.filter-form {
+  display: grid;
+  grid-template-columns: 200px 200px 1fr 223px;
+  gap: 17px;
+}
+
+.filter-fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.filter-button {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+
+.filter-fieldset-price {
+  margin-left: 96px;
 }
 
 .filter-title {
@@ -414,11 +467,26 @@ li.advantages-item:nth-child(5) {
   line-height: 26px;
 }
 
+.range {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.range-field {
+  display: grid;
+  grid-template-columns: 1fr 44px;
+}
+
 .range-title {
+  grid-column: -2/-1;
+  grid-row: 1/2;
   opacity: 0.3;
 }
 
 .range-input {
+  width: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/2;
   color: #ffffff;
   background-color: transparent;
   font-family: inherit;
@@ -433,7 +501,13 @@ li.advantages-item:nth-child(5) {
   font-weight: 400;
 }
 
+.catalog {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
 .catalog-title {
+  margin: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 39px;
@@ -441,7 +515,56 @@ li.advantages-item:nth-child(5) {
   color: #000000;
 }
 
+.catalog-sort {
+  display: grid;
+  grid-template-columns: 1fr 287px max-content;
+  gap: 80px;
+  padding-top: 50px;
+  padding-bottom: 56px;
+}
+
+.view-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 224px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.view-item {
+  margin: 4px;
+}
+
+.view-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
 /* Card */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 18px;
+  row-gap: 10px;
+  margin-bottom: 64px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  padding: 20px;
+}
+
+.card-image {
+  order: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .card-link {
   font-size: 24px;
   font-weight: 700;
@@ -450,19 +573,98 @@ li.advantages-item:nth-child(5) {
   text-decoration: none;
 }
 
+.card-description {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.card-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.star-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.star {
+  min-width: 20px;
+}
+
+.card-price {
+  margin-right: 80px;
+}
+
+.card-title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
 .card-rate {
+  min-width: 160px;
+  margin: 0;
+  padding: 0;
+  padding: 9px 20px 9px 20px;
   color: #333333;
   font-size: 16px;
   text-transform: uppercase;
 }
 
 /* Pagination */
+.pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagination-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 73px;
+}
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item {
+  margin-right: 8px;
+}
+
 .pagination-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  padding: 8px;
   color: #ffffff;
   background-color: #83b3d3;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.pagination-select {
+  display: flex;
+}
+
+.select-label {
+  margin: 0;
+  margin-right: 51px;
 }
 
 .pagination-link-active {
